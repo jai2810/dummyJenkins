@@ -3,8 +3,7 @@ import subprocess
 
 if __name__ == '__main__':
     print("Hello world with env variable.")
-    s = os.getenv("env1")
-    print(s)
+    os.environ["ENV_VARIABLE"] = "dsfsdfsdf"
     # shell_command = 'export MY_ENV_VAR=my_value_from_command && env | grep MY_ENV_VAR'
 
     # # Run the shell command and capture the output
