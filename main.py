@@ -3,7 +3,7 @@ import subprocess
 
 if __name__ == '__main__':
     print("Hello world with env variable.")
-    with open("env.properties", 'a') as f:
-        f.write("var2=val2")
+    with open("env.properties", 'w') as f:
+        f.write("POLARIS_BUILD_NUM=JP")
     
 
