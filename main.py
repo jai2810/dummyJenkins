@@ -4,7 +4,7 @@ import sys
 
 if __name__ == '__main__':
     print("Hello world with env variable.")
-    stats = 1
+    status = 1
     with open("env.properties", 'w') as f:
         f.write("POLARIS_BUILD_NUM=J")
     if status==1:
