@@ -7,7 +7,7 @@ if __name__ == '__main__':
     status = 1
     with open("env.properties", 'w') as f:
         f.write("POLARIS_BUILD_NUM=J")
-    if status==1:
+    if status!=1:
         sys.exit(0)
     else:
         sys.exit(1)
