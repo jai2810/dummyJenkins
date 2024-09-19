@@ -8,7 +8,8 @@ if __name__ == '__main__':
     file_with_build_number_as_name += ".json"
     print(file_with_build_number_as_name)
     with open(file_with_build_number_as_name, 'w') as f:
-        s = str.format("{\"build_number\":{}}", build_num)
+        s = str.format("\"build_number\":{}", build_num)
+        s = "{" + s + "}"
         f.write(s)
     with open(file_with_build_number_as_name, 'r') as f:
         print("reading file")
