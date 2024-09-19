@@ -5,6 +5,5 @@ import sys
 if __name__ == '__main__':
     print("Hello world with env variable.")
     os.environ["POLARIS_BUILD"]="123"
-    print(os.environ.get("POLARIS_BUILD"))
     
 
